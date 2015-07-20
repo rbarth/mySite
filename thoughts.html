@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<main id="postMain">
+
+  <div class="container-fluid my-row">
+  <div class="col-md-8 col-md-offset-2 post">
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <span>{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="postTitle" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  </div>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</main>

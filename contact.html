@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<main  id="contactMain">
+  <div id="contactLine">
+    <h3>Questions or comments? Please feel free to shoot me an email below.</h3>
+  </div>
+  <div id="formArea">
+    <div class = "container my-row ">
+    <div class="col-md-6 col-md-offset-3">
+      <form action="MAILTO:rbarth5@gmail.com" method="post" enctype="text/plain" id="emailForm">
+        <div class="form-group form-inline">
+          <input type="text" class="form-control" name="emailName" id="emailName" placeholder="Enter your name" required>
+          <input type="text" class="form-control" name="emailAddress" id="emailAddress" placeholder="Enter your email address" required>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="10" cols="50" id="emailMessage" name="emailMessage" placeholder="Please enter your comments, questions, or requests here." required></textarea>
+        </div>
+        <div class="form-group">
+          <input type="submit" class="btn-send" name="submit" value="Send">
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</main>
