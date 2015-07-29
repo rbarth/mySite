@@ -259,7 +259,7 @@ footer
 
 main
 {
-	background-color: $blue-grey;
+	background-color: $teal;
 
 }
 
@@ -441,12 +441,22 @@ textarea:-ms-input-placeholder
   text-align: center;
 }
 
+
 #contactMain
 {
 	background: url('../images/beach.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-attachment: scroll;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  padding: 0;
 	padding-top:50px;
 }
 
@@ -465,21 +475,23 @@ textarea:-ms-input-placeholder
 #formArea
 {
 	position: relative;
+  margin-top: 50px;
 }
 
-// #aboutContent
-// {
-//   margin-top: 100px;
-// 	padding-bottom: 30px;
-//   position: absolute;
-// }
 
 #aboutMain
 {
 	background: url('../images/palmTrees.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment:fixed;
+
+background-position: center top;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+margin: 0;
+padding: 0;
 }
 
 #aboutMe
@@ -493,7 +505,7 @@ textarea:-ms-input-placeholder
   margin-top: 100px;
   // margin-bottom: 30px;
   // position: absolute;
-  overflow: auto;
+  // overflow: auto;
 }
 
 .center
@@ -516,9 +528,18 @@ textarea:-ms-input-placeholder
 .portfolioMainBk
 {
 	background: url('../images/starsInTheSky.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-attachment: scroll;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 #site1
@@ -576,9 +597,18 @@ textarea:-ms-input-placeholder
 #postMain
 {
 	background: url('../images/cabin.svg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-attachment: scroll;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -602,13 +632,13 @@ a:hover
 
 footer
 {
-  // display:none;
-  position: relative;
+  position:relative;
   bottom: 0px;
   width: 100%;
-  // height: 56px;
+  height: auto;
   // margin-top: 25px;
   color: white;
+  margin-top: 20px;
 
   a, a:visited
   {
@@ -630,8 +660,8 @@ footer
 
   ul
   {
-    top: 16px;
     float: right;
+    padding-top: 10px;
     padding-left: 10px;
   }
 
@@ -651,7 +681,8 @@ footer
 
 #footerLogo
 {
-  width: 55px;
+  position: relative;
+  width: 50px;
   padding:5px;
 }
 
@@ -661,6 +692,21 @@ footer
     footer li
     {
         display:list-item;
-        float:left;
+        float:none;
     }
+
+    #footerLogo
+    {
+      width: 110px;
+      margin-top: 8px;
+    }
+}
+
+.just-center-already
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
+  padding-right: 10px;
 }
