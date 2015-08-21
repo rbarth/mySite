@@ -1,256 +1,18 @@
-/**
- * Site header
- */
-// .site-header {
-//     border-top: 5px solid $grey-color-dark;
-//     border-bottom: 1px solid $grey-color-light;
-//     min-height: 56px;
-//
-//     // Positioning context for the mobile navigation icon
-//     position: relative;
-// }
-//
-// .site-title {
-//     font-size: 26px;
-//     line-height: 56px;
-//     letter-spacing: -1px;
-//     margin-bottom: 0;
-//     float: left;
-//
-//     &,
-//     &:visited {
-//         color: $grey-color-dark;
-//     }
-// }
-//
-// .site-nav {
-//     float: right;
-//     line-height: 56px;
-//
-//     .menu-icon {
-//         display: none;
-//     }
-//
-//     .page-link {
-//         color: $text-color;
-//         line-height: $base-line-height;
-//
-//         // Gaps between nav items, but not on the first one
-//         &:not(:first-child) {
-//             margin-left: 20px;
-//         }
-//     }
-//
-//     @include media-query($on-palm) {
-//         position: absolute;
-//         top: 9px;
-//         right: 30px;
-//         background-color: $background-color;
-//         border: 1px solid $grey-color-light;
-//         border-radius: 5px;
-//         text-align: right;
-//
-//         .menu-icon {
-//             display: block;
-//             float: right;
-//             width: 36px;
-//             height: 26px;
-//             line-height: 0;
-//             padding-top: 10px;
-//             text-align: center;
-//
-//             > svg {
-//                 width: 18px;
-//                 height: 15px;
-//
-//                 path {
-//                     fill: $grey-color-dark;
-//                 }
-//             }
-//         }
-//
-//         .trigger {
-//             clear: both;
-//             display: none;
-//         }
-//
-//         &:hover .trigger {
-//             display: block;
-//             padding-bottom: 5px;
-//         }
-//
-//         .page-link {
-//             display: block;
-//             padding: 5px 10px;
-//         }
-//     }
-// }
-//
-//
-//
-// /**
-//  * Site footer
-//  */
-// .site-footer {
-//     border-top: 1px solid $grey-color-light;
-//     padding: $spacing-unit 0;
-// }
-//
-// .footer-heading {
-//     font-size: 18px;
-//     margin-bottom: $spacing-unit / 2;
-// }
-//
-// .contact-list,
-// .social-media-list {
-//     list-style: none;
-//     margin-left: 0;
-// }
-//
-// .footer-col-wrapper {
-//     font-size: 15px;
-//     color: $grey-color;
-//     margin-left: -$spacing-unit / 2;
-//     @extend %clearfix;
-// }
-//
-// .footer-col {
-//     float: left;
-//     margin-bottom: $spacing-unit / 2;
-//     padding-left: $spacing-unit / 2;
-// }
-//
-// .footer-col-1 {
-//     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-//     width:         calc(35% - (#{$spacing-unit} / 2));
-// }
-//
-// .footer-col-2 {
-//     width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-//     width:         calc(20% - (#{$spacing-unit} / 2));
-// }
-//
-// .footer-col-3 {
-//     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-//     width:         calc(45% - (#{$spacing-unit} / 2));
-// }
-//
-// @include media-query($on-laptop) {
-//     .footer-col-1,
-//     .footer-col-2 {
-//         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-//         width:         calc(50% - (#{$spacing-unit} / 2));
-//     }
-//
-//     .footer-col-3 {
-//         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-//         width:         calc(100% - (#{$spacing-unit} / 2));
-//     }
-// }
-//
-// @include media-query($on-palm) {
-//     .footer-col {
-//         float: none;
-//         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-//         width:         calc(100% - (#{$spacing-unit} / 2));
-//     }
-// }
-//
-//
-//
-// /**
-//  * Page content
-//  */
-// .page-content {
-//     padding: $spacing-unit 0;
-// }
-//
-// .page-heading {
-//     font-size: 20px;
-// }
-//
-// .post-list {
-//     margin-left: 0;
-//     list-style: none;
-//
-//     > li {
-//         margin-bottom: $spacing-unit;
-//     }
-// }
-//
-// .post-meta {
-//     font-size: $small-font-size;
-//     color: $grey-color;
-// }
-//
-// .post-link {
-//     display: block;
-//     font-size: 24px;
-// }
-//
-//
-//
-// /**
-//  * Posts
-//  */
-// .post-header {
-//     margin-bottom: $spacing-unit;
-// }
-//
-// .post-title {
-//     font-size: 42px;
-//     letter-spacing: -1px;
-//     line-height: 1;
-//
-//     @include media-query($on-laptop) {
-//         font-size: 36px;
-//     }
-// }
-//
-// .post-content {
-//     margin-bottom: $spacing-unit;
-//
-//     h2 {
-//         font-size: 32px;
-//
-//         @include media-query($on-laptop) {
-//             font-size: 28px;
-//         }
-//     }
-//
-//     h3 {
-//         font-size: 26px;
-//
-//         @include media-query($on-laptop) {
-//             font-size: 22px;
-//         }
-//     }
-//
-//     h4 {
-//         font-size: 20px;
-//
-//         @include media-query($on-laptop) {
-//             font-size: 18px;
-//         }
-//     }
-// }
-
 @charset "UTF-8";
 
 $purple: #543445;
 $teal: #3C6D73;
 $blue-grey: #294B4F;
+$sans-serif: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+$serif: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
+//...................general css styles
 
 .site-header
 {
 	background-color: $teal;
 }
 
-#contact-header
-{
-	padding-top:50px;
-}
 
 footer
 {
@@ -266,7 +28,7 @@ main
 body
 {
 	background-color: $teal;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-family: $sans-serif;
 }
 
 li
@@ -276,17 +38,22 @@ li
 
 h1, h2, h3
 {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: $serif;
 	text-align: center;
 	margin:0px;
 }
 
 h4, h5
 {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-family: $serif;
 	margin:0px;
 	font-weight: bold;
 	color: $purple;
+}
+
+h4
+{
+  text-align: center;
 }
 
 h1
@@ -309,7 +76,7 @@ textarea
 }
 
 strong {
-    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-family: $serif;
     font-size: 16px;
     color: $purple;
 }
@@ -325,52 +92,6 @@ img
   color: white;
 }
 
- #emailAddress, #emailName, #emailMessage
- {
- 	color:#000;
-	background: rgba(255,255,255,.4);
- }
-
-
-#emailAddress:focus, #emailName:focus, #emailMessage:focus
-{
-    background-color: rgba(255,255,255,.7);
-}
-
-input::-webkit-input-placeholder
-{
-	color: rgba(0,0,0,.5) !important;
-}
-input::-moz-placeholder
-{
-	color: rgba(0,0,0,.5) !important;
-}
-input:-moz-placeholder
-{   /* Older versions of Firefox */
-	color: rgba(0,0,0,.5) !important;
-}
-input:-ms-input-placeholder
-{
-	color: rgba(0,0,0,.5) !important;
-}
-
-textarea::-webkit-input-placeholder
-{
-	color: rgba(0,0,0,.5) !important;
-}
-textarea::-moz-placeholder
-{
-	color: rgba(0,0,0,.5) !important;
-}
-textarea:-moz-placeholder
-{   /* Older versions of Firefox */
-	color: rgba(0,0,0,.5) !important;
-}
-textarea:-ms-input-placeholder
-{
-	color: rgba(0,0,0,.5) !important;
-}
-
 .navbar-nav
 {
 	float:none;
@@ -380,6 +101,7 @@ textarea:-ms-input-placeholder
 .navbar
 {
 	margin-bottom: 0px;
+  font-family: $serif;
 }
 
 .navbar .navbar-collapse {
@@ -388,7 +110,7 @@ textarea:-ms-input-placeholder
 
 .navbar-custom {
   color: #fff;
-  font-size: 18px;
+  font-size: 19px;
  }
 
 .navbar-custom .navbar-nav > li > a {
@@ -400,112 +122,9 @@ textarea:-ms-input-placeholder
   background-color: transparent;
    }
 
-/*
-.navbar-custom .navbar-nav > .active > a,
-.navbar-custom .navbar-nav > .active > a:hover,
-.navbar-custom .navbar-nav > .active > a:focus {
-  color: #fff; }
- */
-
-// .navbar-brand
-// {
-//   @include media-query(600px)
-//   {
-//     display: none;
-//   }
-// }
-
-
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
   margin-left: 0;
   padding-top:0;
-}
-
-// .navbar-collapse
-// {
-// 	background: ;
-// }
-
-#titleImg
-{
-	background: url('../images/irisFun.svg');
-	background-size: cover;
-}
-
-#titleBox
-{
-  color: #fff;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-
-#contactMain
-{
-	background: url('../images/beach.svg');
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// background-attachment: scroll;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  margin: 0;
-  padding: 0;
-	padding-top:50px;
-}
-
-#contactLine
-{
-	position:relative;
-	top: 20px;
-	color:rgba(84,52,69,1);
-	background: rgba(255,255,255,.7);
-	padding-top:5px;
-	padding-bottom:5px;
-	margin-bottom:5px;
-
-}
-
-#formArea
-{
-	position: relative;
-  margin-top: 50px;
-}
-
-
-#aboutMain
-{
-	background: url('../images/palmTrees.svg');
-
-background-position: center top;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-margin: 0;
-padding: 0;
-}
-
-#aboutMe
-{
-  // position:relative;
-	padding: 15px;
-	background: rgba(250,250,250,.5);
-	font-size: 15px;
-	border: 5px double white;
-	border-radius: 15px;
-  margin-top: 100px;
-  // margin-bottom: 30px;
-  // position: absolute;
-  // overflow: auto;
 }
 
 .center
@@ -520,104 +139,6 @@ padding: 0;
 	text-align: center;
 }
 
-#portfolioMain
-{
-	padding-top:80px;
-}
-
-.portfolioMainBk
-{
-	background: url('../images/starsInTheSky.svg');
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// background-attachment: scroll;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  margin: 0;
-  padding: 0;
-}
-
-#site1
-{
-	position: relative;
-	left: 10%;
-	width: 45%;
-}
-
-#site2
-{
-	position: relative;
-	/* left: 55%; */
-	width: 45%;
-}
-
-#site3
-{
-	position: relative;
-	left: 30%;
-	width: 45%;
-}
-
-#portfolioContent
-{
-	position: relative;
-	width:70%;
-	display: none;
-	padding: 15px;
-	background: rgba(250,250,250,.5);
-	font-size: 15px;
-	border: 5px double white;
-	border-radius: 15px;
-}
-
-#portfolioReturn
-{
- 	float:left;
-	padding-right: 15px;
-	width: 15%;
-}
-
-.post
-{
-  position: relative;
-  background-color: white;
-  margin-top: 100px;
-  padding: 15px;
-  background: rgba(250,250,250,.5);
-  font-size: 15px;
-  border: 5px double white;
-  border-radius: 15px;
-}
-
-#postMain
-{
-	background: url('../images/cabin.svg');
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// background-attachment: scroll;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  margin: 0;
-  padding: 0;
-}
-
-
-.postTitle
-{
-  font-size: 20px;
-
-}
-
 a
 {
   color: $purple;
@@ -628,6 +149,16 @@ a:hover
 {
   text-decoration: none;
   color: #fff;
+}
+
+.contentFormat
+{
+  padding: 15px;
+  background: rgba(250,250,250,.5);
+  font-size: 15px;
+  border: 5px double white;
+  border-radius: 15px;
+  margin-top: 100px;
 }
 
 footer
@@ -687,6 +218,232 @@ footer
 }
 
 
+//...................title page css
+
+#titleImg
+{
+	background: url('../images/irisFun.svg');
+	background-size: cover;
+}
+
+#titleBox
+{
+  color: #fff;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+//...................contact page css
+#contact-header
+{
+	padding-top:50px;
+}
+
+ #emailAddress, #emailName, #emailMessage
+ {
+ 	color:#000;
+	background: rgba(255,255,255,.4);
+ }
+
+
+#emailAddress:focus, #emailName:focus, #emailMessage:focus
+{
+    background-color: rgba(255,255,255,.7);
+}
+
+input::-webkit-input-placeholder
+{
+	color: rgba(0,0,0,.5) !important;
+}
+input::-moz-placeholder
+{
+	color: rgba(0,0,0,.5) !important;
+}
+input:-moz-placeholder
+{   /* Older versions of Firefox */
+	color: rgba(0,0,0,.5) !important;
+}
+input:-ms-input-placeholder
+{
+	color: rgba(0,0,0,.5) !important;
+}
+
+textarea::-webkit-input-placeholder
+{
+	color: rgba(0,0,0,.5) !important;
+}
+textarea::-moz-placeholder
+{
+	color: rgba(0,0,0,.5) !important;
+}
+textarea:-moz-placeholder
+{   /* Older versions of Firefox */
+	color: rgba(0,0,0,.5) !important;
+}
+textarea:-ms-input-placeholder
+{
+	color: rgba(0,0,0,.5) !important;
+}
+
+#contactMain
+{
+	background: url('../images/beach.svg');
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-attachment: scroll;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  padding: 0;
+	padding-top:50px;
+}
+
+#contactLine
+{
+	position:relative;
+	top: 20px;
+	color:rgba(84,52,69,1);
+	background: rgba(255,255,255,.7);
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-bottom:5px;
+
+}
+
+#formArea
+{
+	position: relative;
+  margin-top: 50px;
+}
+
+
+//...................about page css
+
+#aboutMain
+{
+	background: url('../images/palmTrees.svg');
+background-position: center top;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+margin: 0;
+padding: 0;
+}
+
+#aboutMe
+{
+ @extend .contentFormat;
+}
+
+
+//...................portfolio page css
+
+#portfolioMain
+{
+	padding-top:100px;
+}
+
+#site1
+{
+	position: relative;
+	left: 10%;
+	width: 45%;
+}
+
+#site2
+{
+	position: relative;
+	/* left: 55%; */
+	width: 45%;
+}
+
+#site3
+{
+	position: relative;
+	left: 30%;
+	width: 45%;
+}
+
+#portfolioSiteMain
+{
+	background: url('../images/starsInTheSky.svg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#portfolioContent
+{
+   @extend .contentFormat;
+}
+
+#portfolioReturn
+{
+	padding-right: 15px;
+	width: 70px;
+}
+
+.cafeSlider
+{
+  width: 100%;
+}
+
+//...................thoughts/blogs page css
+
+.post
+{
+  position: relative;
+   @extend .contentFormat;
+}
+
+#thoughtsMain
+{
+	background: url('../images/cabin.svg');
+	// background-size: cover;
+	// background-repeat: no-repeat;
+	// background-attachment: scroll;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#postMain
+{
+  @extend #thoughtsMain;
+}
+
+
+.postTitle
+{
+  font-size: 20px;
+
+}
+
+//...................@media modifications
+
+
 @media screen and (max-width: 400px)
 {
     footer li
@@ -702,11 +459,27 @@ footer
     }
 }
 
-.just-center-already
+
+@media screen and (max-width: 768px)
 {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 0px;
-  padding-right: 10px;
+  .navbar .navbar-brand
+  {
+    position: relative;
+    left: 15px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  #portfolioLink
+  {
+    padding-top: 0;
+    margin-top: 55px;
+  }
+
+  .navbar .navbar-collapse
+  {
+    border: 5px double rgba(255,255,255,1);
+    border-radius: 15px;
+    background-color: $teal;
+  }
 }

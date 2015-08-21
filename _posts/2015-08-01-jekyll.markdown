@@ -1,0 +1,6 @@
+---
+layout: post
+title:  "Learning to Drive Down Web Design Bld"
+excerpt: "I started my journey with Dreamweaver in the driver's seat, then ditched Dreamweaver on the side of the road and went on for a while teaching myself how to drive from scratch. Until I finally picked up to two passengers: Bootstrap and Jekyll. Although, bootstrap was religated to the backseat, where he is constantly arguing with me about what I can and cannot do!"
+---
+I was introduced into the world of web design through Adobe Dreamweaver, in the very first web design course I ever took. In the preceding course, I was told that Dreamweaver was cheating, and from that point on we were taught to build from scratch.

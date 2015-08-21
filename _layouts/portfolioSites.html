@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include navbar.html %}
+    <main id ="portfolioSiteMain">
+      <div class = "container-fluid my-row ">
+      <div class="col-md-8 col-md-offset-2">
+      <div id="portfolioContent">
+          <a href="/portfolio.html"><img id="portfolioReturn" src="/images/arrow.svg"></img></a>
+        </br>
+          {{ content }}
+      </div>
+      </div>
+    </div>
+      {% include footer.html %}
+    </main>
+
+  </body>
+
+</html>

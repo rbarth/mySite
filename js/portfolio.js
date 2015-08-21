@@ -67,34 +67,43 @@ $(document).ready(function(){
 		if ($('main#aboutMain').length > 0)
 		{
 				var dh = $("#aboutMe").height();
-				var spacings = 135;
+				var spacings = 134;
+		}
+		else if ($('main#thoughtsMain').length > 0)
+		{
+				var dh = $("#thoughtsContent").height();
+				var spacings = 140;
 		}
 		else if ($('main#postMain').length > 0)
 		{
-				var dh = $("#postContent").height();
-				var spacings = 140;
+				var dh = $("#postContent").height() - 13;
+				var spacings = 0;
 		}
 		else if ($('main#contactMain').length > 0)
 		{
 				var dh = $("#contactContent").height();
 				var spacings = 40;
 		}
-
 		else if ($('main#portfolioMain').length > 0)
 		{
 				var dh = $("#portfolioContent").height();
-				var spacings = 325;
+				var spacings = 136;
 		}
 
 					var wh = $(window).height();
-					var nh = $("#navbar").height();
-					var space = wh - dh - 57 - spacings;
+					// var nh = $("#navbar").height();
+					// alert("window: " + wh);
+					// alert("spacings: " + spacings);
+					// alert("div: " + dh);
 
-					if (dh < (wh - nh) && space > 0)
+					var space = wh - dh - 57 - spacings;
+					// alert("space" + space);
+					if (dh < (wh - 57) && space > 0)
 					{
 					 	$('footer').css('marginTop', space);
 				 	}
-					else {
+					else
+					{
 						$('footer').css('marginTop', '20');
 					}
 
@@ -209,17 +218,29 @@ $(document).ready(function(){
 
 
 
-	$("#site1").click(function(){
-		$("#portfolioContent").css("display", "block"),
-		$(".sites").css("display", "none"),
-		$("#portfolioMain").addClass("portfolioMainBk")
-    });
+	// $("#site1").click(function(){
+	// 	$("#portfolioContent").css("display", "block"),
+	// 	$(".sites").css("display", "none"),
+	// 	$("#portfolioMain").addClass("portfolioMainBk")
+  //   });
 
 
-     $("#portfolioReturn").click(function(){
-		$("#portfolioContent").css("display", "none"),
-		$(".sites").css("display", "block"),
-		$("#portfolioMain").removeClass("portfolioMainBk")
-    });
+    //  $("#portfolioReturn").click(function(){
+		// $("#portfolioContent").css("display", "none"),
+		// $(".sites").css("display", "block"),
+		// $("#portfolioMain").removeClass("portfolioMainBk")
+    // });
+
+	jQuery('body').bind('click', function(e) {
+		if(jQuery(e.target).closest('.navbar').length == 0)
+		{
+			var opened = jQuery('.navbar-collapse').hasClass('collapse in');
+			if ( opened === true )
+			{
+					jQuery('.navbar-collapse').collapse('hide');
+			}
+		}
+	});
+
 
 });

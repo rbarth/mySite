@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<main id="postMain">
+<main id="thoughtsMain">
 
   <div class="container-fluid my-row">
   <div class="col-md-8 col-md-offset-2 post">
-    <ul id="postContent">
+    <ul id="thoughtsContent">
       {% for post in site.posts %}
         <li>
           <span>{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -14,6 +14,8 @@ layout: default
           <h2>
             <a class="postTitle" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>
+          {{ post.excerpt }}
+        </br></br>
         </li>
       {% endfor %}
     </ul>
