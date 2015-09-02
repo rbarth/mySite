@@ -13,18 +13,6 @@ $(document).ready(function(){
      	}
  	});
 
-	// $(window).scroll(function() {
-	// 		if ($(this).scrollBottom()<0)
-	// 		{
-	// 				$('footer').fadeOut();
-	// 		}
-	// 		else
-	// 		{
-	// 				$('footer').fadeIn();
-	// 		}
-	// });
-
-
 	$(function() {
 
     	function abso() {
@@ -40,196 +28,72 @@ $(document).ready(function(){
     	});
 
     	abso();
-
 	});
-
-
-
-	// $(function() {
-	//
-  //   	function abso() {
-  //       $('#contactMain').css({
-  //           // position: 'absolute',
-  //           width: $(window).width(),
-  //           height: $(window).height()
-  //       	});
-  //   	}
-	//
-  //   	$(window).resize(function() {
-  //       abso();
-  //   	});
-	//
-  //   	abso();
-	//
-	// });
 
 	$(function() {
-		if ($('main#aboutMain').length > 0)
-		{
-				var dh = $("#aboutMe").height();
-				var spacings = 134;
-		}
-		else if ($('main#thoughtsMain').length > 0)
-		{
-				var dh = $("#thoughtsContent").height();
-				var spacings = 140;
-		}
-		else if ($('main#postMain').length > 0)
-		{
-				var dh = $("#postContent").height() - 13;
-				var spacings = 0;
-		}
-		else if ($('main#contactMain').length > 0)
-		{
-				var dh = $("#contactContent").height();
-				var spacings = 40;
-		}
-		else if ($('main#portfolioMain').length > 0)
-		{
-				var dh = $("#portfolioContent").height();
-				var spacings = 136;
-		}
 
-					var wh = $(window).height();
-					// var nh = $("#navbar").height();
-					// alert("window: " + wh);
-					// alert("spacings: " + spacings);
-					// alert("div: " + dh);
+			function abso() {
+				$('main').css({
+						// position: 'absolute',
+						width: $(document).width(),
+						height: $(document).height()
+					});
+			}
 
-					var space = wh - dh - 57 - spacings;
-					// alert("space" + space);
-					if (dh < (wh - 57) && space > 0)
-					{
-					 	$('footer').css('marginTop', space);
-				 	}
-					else
-					{
-						$('footer').css('marginTop', '20');
-					}
+			$(window).resize(function() {
+				abso();
+			});
 
+			abso();
 	});
 
 
-	// $(function() {
-	//
-  //   	function abso() {
-  //       $('#aboutMain').css({
-  //           // position: 'absolute',
-  //           width: $(window).width(),
-  //           height: $(window).height()
-  //       	});
-  //   	}
-	//
-  //   	$(window).resize(function() {
-  //       abso();
-  //   	});
-	//
-  //   	abso();
-	//
-	// });
 
 	// $(function() {
-	//
-	// 	var wh = $(window).height();
-	// 	var dh = $('#aboutMe').height();
-	// 	if (dh > wh - 100)
+	// 	if ($('main#aboutMain').length > 0)
 	// 	{
-	// 		  $('#aboutMe').css({
-	// 				height: wh - 100
-	// 			});
+	// 			var dh = $("#aboutMe").height();
+	// 			var spacings = 134;
 	// 	}
-	// });
-
-	// $(function() {
-	//
-  //   	function abso() {
-  //       $('#portfolioMain').css({
-  //           // position: 'absolute',
-  //           width: $(window).width(),
-  //           height: $(window).height()
-  //       	});
-  //   	}
-	//
-  //   	$(window).resize(function() {
-  //       abso();
-  //   	});
-	//
-  //   	abso();
-	//
-	// });
-	//
-	// $(function() {
-	//
-	// 		function abso() {
-	// 			$('#postMain').css({
-	// 					// position: 'absolute',
-	// 					width: $(window).width(),
-	// 					height: $(window).height()
-	// 				});
-	// 		}
-	//
-	// 		$(window).resize(function() {
-	// 			abso();
-	// 		});
-	//
-	// 		abso();
-	//
-	// });
-
-	// $(function() {
-	//
-	// 	var dh = $("#aboutContent").height();
-	// 	var wh = $(window).height();
-	// 	var nh = $("#navbar").height();
-	// 	var tp = wh/2 - dh/2 - nh;
-	//
-	// 	if (tp > 0)
+	// 	else if ($('main#thoughtsMain').length > 0)
 	// 	{
-	// 		$("#aboutContent").css({
-	// 		top: tp
-	// 		});
+	// 			var dh = $("#thoughtsContent").height();
+	// 			var spacings = 140;
+	// 	}
+	// 	else if ($('main#postMain').length > 0)
+	// 	{
+	// 			var dh = $("#postContent").height() - 13;
+	// 			var spacings = 0;
+	// 	}
+	// 	else if ($('main#contactMain').length > 0)
+	// 	{
+	// 			var dh = $("#contactContent").height();
+	// 			var spacings = 40;
+	// 	}
+	// 	else if ($('main#portfolioMain').length > 0)
+	// 	{
+	// 			var dh = $("#portfolioContent").height();
+	// 			var spacings = 736;
 	// 	}
 	//
-	// });
-
-	// $(function() {
-	// 	var dh = $("#formArea").height();
-	// 	var wh = $(window).height();
-	// 	var nh = $("#navbar").height();
-	// 	var lh = $("#contactLine").height();
-	// 	var tp = wh/2 - dh/2 - nh - lh;
+	// 				var wh = $(window).height();
+	// 				// var nh = $("#navbar").height();
+	// 				// alert("window: " + wh);
+	// 				// alert("spacings: " + spacings);
+	// 				// alert("div: " + dh);
 	//
-	// 	if (tp > 0)
-	// 	{
-	// 		$("#formArea").css({
-	// 		top: tp
-	// 		});
-	// 	}
-	//
-	// 	else
-	// 	{
-	// 		$("#formArea").css({
-	// 		top: 50
-	// 		});
-	// 		// alert("2");
-	// 	}
+	// 				var space = wh - dh - 57 - spacings;
+	// 				// alert("space" + space);
+	// 				if (dh < (wh - 57) && space > 0)
+	// 				{
+	// 				 	$('footer').css('marginTop', space);
+	// 			 	}
+	// 				else
+	// 				{
+	// 					$('footer').css('marginTop', '20');
+	// 				}
 	//
 	// });
-
-
-
-	// $("#site1").click(function(){
-	// 	$("#portfolioContent").css("display", "block"),
-	// 	$(".sites").css("display", "none"),
-	// 	$("#portfolioMain").addClass("portfolioMainBk")
-  //   });
-
-
-    //  $("#portfolioReturn").click(function(){
-		// $("#portfolioContent").css("display", "none"),
-		// $(".sites").css("display", "block"),
-		// $("#portfolioMain").removeClass("portfolioMainBk")
-    // });
 
 	jQuery('body').bind('click', function(e) {
 		if(jQuery(e.target).closest('.navbar').length == 0)

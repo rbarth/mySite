@@ -1,6 +1,12 @@
 ---
 layout: post
-title:  "Learning to Drive Down Web Design Bld"
-excerpt: "I started my journey with Dreamweaver in the driver's seat, then ditched Dreamweaver on the side of the road and went on for a while teaching myself how to drive from scratch. Until I finally picked up to two passengers: Bootstrap and Jekyll. Although, bootstrap was religated to the backseat, where he is constantly arguing with me about what I can and cannot do!"
+title:  "Driving Down Web Design Bld"
+excerpt: "My history with Dreamweaver, Bootstrap, and Jekyll, and a brief guide to the pros and cons of each."
 ---
-I was introduced into the world of web design through Adobe Dreamweaver, in the very first web design course I ever took. In the preceding course, I was told that Dreamweaver was cheating, and from that point on we were taught to build from scratch.
+I started my journey with Dreamweaver in the driver's seat, then ditched Dreamweaver on the side of the road and went on for a while teaching myself how to drive from scratch. Until I finally picked up to two passengers: Bootstrap and Jekyll. Although, bootstrap was relegated to the backseat, where he is constantly arguing with me about what I can and cannot do!
+
+I was introduced into the world of web design through Adobe Dreamweaver in the very first web design course I ever took. In the preceding course, I was told that Dreamweaver was cheating, and from that point on we were taught to build from scratch. There was a bit more freedom and a lot more learning, but the work was often tedious. Until in my very last web course, my professor mentioned a framework called Bootstrap and gave us a brief introduction to how it works. I loved the idea of grid systems and classes that make designing responsive websites simple, and the components like glyphicons and javascript features were an added bonus. I soon began experimenting with Bootstrap and learning how to customize its features and navigate around some of its more annoying defaults. It wasn't till after the course was over that I really had time to play around with Bootstrap and it was as I was building this website that I was introduced to Jekyll.
+
+**Adobe Dreamweaver**
+
+Con: It's not free! 

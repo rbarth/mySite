@@ -8,27 +8,13 @@ $serif: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 
 //...................general css styles
 
-.site-header
-{
-	background-color: $teal;
-}
-
-
-footer
-{
-	background-color:$blue-grey;
-}
-
-main
-{
-	background-color: $teal;
-
-}
-
 body
 {
 	background-color: $teal;
 	font-family: $sans-serif;
+	margin: 0;
+	padding: 0;
+
 }
 
 li
@@ -163,13 +149,13 @@ a:hover
 
 footer
 {
-  position:relative;
-  bottom: 0px;
+	// position:absolute;
+  // bottom:0;
+	background-color:$blue-grey;
   width: 100%;
-  height: auto;
-  // margin-top: 25px;
+  height: 51px;
   color: white;
-  margin-top: 20px;
+  // margin-top: 20px;
 
   a, a:visited
   {
@@ -217,6 +203,25 @@ footer
   padding:5px;
 }
 
+.coverBkg
+{
+	background-position: center top;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+#arrow
+{
+	padding-right: 15px;
+	width: 70px;
+}
+
 
 //...................title page css
 
@@ -224,6 +229,9 @@ footer
 {
 	background: url('../images/irisFun.svg');
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 }
 
 #titleBox
@@ -289,19 +297,19 @@ textarea:-ms-input-placeholder
 
 #contactMain
 {
+	// position: absolute;
 	background: url('../images/beach.svg');
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// background-attachment: scroll;
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
+	background-attachment: fixed;
+  // background-position: center top;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
+	// height: 100%;
+	// width: 100%;
+	// @extend .coverBkg;
 	padding-top:50px;
 }
 
@@ -328,16 +336,16 @@ textarea:-ms-input-placeholder
 
 #aboutMain
 {
-	background: url('../images/palmTrees.svg');
-background-position: center top;
-background-repeat: no-repeat;
+	background: url('../images/palmTrees2.svg');
+// background-position: center top;
+// background-repeat: no-repeat;
 background-attachment: fixed;
 background-size: cover;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
-margin: 0;
-padding: 0;
+// margin: 0;
+// padding: 0;
 }
 
 #aboutMe
@@ -377,15 +385,15 @@ padding: 0;
 #portfolioSiteMain
 {
 	background: url('../images/starsInTheSky.svg');
-  background-position: center top;
-  background-repeat: no-repeat;
+  // background-position: center top;
+  // background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
 }
 
 #portfolioContent
@@ -393,11 +401,6 @@ padding: 0;
    @extend .contentFormat;
 }
 
-#portfolioReturn
-{
-	padding-right: 15px;
-	width: 70px;
-}
 
 .cafeSlider
 {
@@ -415,18 +418,16 @@ padding: 0;
 #thoughtsMain
 {
 	background: url('../images/cabin.svg');
-	// background-size: cover;
-	// background-repeat: no-repeat;
-	// background-attachment: scroll;
-  background-position: center top;
-  background-repeat: no-repeat;
+
+  // background-position: center top;
+  // background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
 }
 
 #postMain
@@ -482,4 +483,16 @@ padding: 0;
     border-radius: 15px;
     background-color: $teal;
   }
+
+	footer
+	{
+		height: auto;
+	}
+
 }
+
+// main
+// {
+// 	// background-color: $teal;
+// 	height: 1000px;
+// }
