@@ -33,11 +33,23 @@ $(document).ready(function(){
 	$(function() {
 
 			function abso() {
+
+				if ($('main').height() < $(window).height())
+				{
 				$('main').css({
 						// position: 'absolute',
-						width: $(document).width(),
-						height: $(document).height()
+						width: $(window).width(),
+						height: $(window).height()
 					});
+				}
+				// else
+				// {
+				// 	$('main').css({
+				// 			// position: 'absolute',
+				// 			width: $(document).width(),
+				// 			height: $(document).height()
+				// 		});
+				// }
 			}
 
 			$(window).resize(function() {
